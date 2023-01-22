@@ -1,4 +1,4 @@
-import Generator from "./components/generator";
+import ERC20Generator from "./components/ERC20Generator";
 import ConnectMetamask from "./components/connectMetamask";
 import { useState } from "react";
 
@@ -17,7 +17,7 @@ export default function Home() {
         setBalance={setBalance}
         setChainId={setChainId}
       />
-      <Generator
+      <ERC20Generator
         activeAccount={activeAccount}
         chainId={chainId}
         balance={balance}

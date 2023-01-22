@@ -5,18 +5,22 @@ import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import InputAdornment from "@mui/material/InputAdornment";
 import InventoryIcon from "@mui/icons-material/Inventory";
 
-function NewOne(props) {
+function UserInput(props) {
   function handleChange(event) {
     const { name, value } = event.target;
+
+    //Checks if the user put in letters in Number field
     if (name === "Supply") {
       let newValue = value;
       if (isNaN(value)) {
         event.preventDefault();
-        newValue = newValue.slice(0, -1); //remove last character typed
+        newValue = newValue.slice(0, -1); //removes last character typed
         event.target.value = newValue;
         alert("This input takes only number");
       }
     }
+
+    //setting the value's of name to target.value which changes with onChange function as well as spreading the previous values
     props.setFormData((prevMeme) => {
       return {
         ...prevMeme,
@@ -68,4 +72,4 @@ function NewOne(props) {
   );
 }
 
-export default NewOne;
+export default UserInput;

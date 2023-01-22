@@ -30,11 +30,8 @@ const findMetaMaskAccount = async () => {
   }
 };
 
+// Connects the user to web3 with metamask
 function ConnectMetamask(props) {
-  useEffect(() => {
-    getAccount();
-  }, [props.activeAccount]); // here you should use props.activeAccount
-
   async function connectMetamask() {
     try {
       await window.ethereum.enable();
@@ -54,11 +51,17 @@ function ConnectMetamask(props) {
   }
 
   const getAccount = async () => {
+    //Checks if the account is already connected
     const account = await findMetaMaskAccount();
     if (account !== null) {
       connectMetamask();
     }
   };
+
+  //Runs useEffect everytime activeAccount changes
+  useEffect(() => {
+    getAccount();
+  }, [props.activeAccount]);
 
   return (
     <div>
