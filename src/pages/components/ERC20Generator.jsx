@@ -100,6 +100,7 @@ function ERC20Generator(props) {
             ? `Contract deployed at : ${props.contractAddress}`
             : ""}
         </p>
+        '
       </div>
       <UserGuide />
     </div>
