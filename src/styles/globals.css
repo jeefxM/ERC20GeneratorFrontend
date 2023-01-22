@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-image: linear-gradient(to right, #0172af, #74febd);
+
+  min-height: 1000px;
+  height: 100%;
+}
