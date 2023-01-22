@@ -20,7 +20,7 @@ function UserInput(props) {
       }
     }
 
-    //setting the value's of name to target.value which changes with onChange function as well as spreading the previous values
+    //setting the values of name to target.value which changes with onChange function as well as spreading the previous values
     props.setFormData((prevMeme) => {
       return {
         ...prevMeme,

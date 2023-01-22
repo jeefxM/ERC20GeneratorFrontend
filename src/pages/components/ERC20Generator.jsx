@@ -32,7 +32,7 @@ function ERC20Generator(props) {
           signer
         );
 
-        //Initializing User's inputs from specified fields
+        //Initializing User input from specified fields
         const initialSupply = formData.Supply;
         const name = formData.Token;
         const symbol = formData.Symbol;
@@ -57,7 +57,7 @@ function ERC20Generator(props) {
         props.setContractAddress(address);
         console.log("Mined at: ", hash);
       } else {
-        console.log("Ethereum object doesn't exist!");
+        console.log("Ethereum object does not exist!");
       }
     } catch (error) {
       console.log(error);
@@ -100,7 +100,6 @@ function ERC20Generator(props) {
             ? `Contract deployed at : ${props.contractAddress}`
             : ""}
         </p>
-        '
       </div>
       <UserGuide />
     </div>
