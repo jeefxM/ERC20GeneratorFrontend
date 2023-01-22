@@ -69,6 +69,7 @@ function ConnectMetamask(props) {
         <Button
           variant="contained"
           className="absolute bg-orange-400 h-10 right-2 top-2"
+          style={{ backgroundColor: "rgb(251 146 60 / var(--tw-bg-opacity))" }}
           onClick={connectMetamask}
         >
           Log in with metamask

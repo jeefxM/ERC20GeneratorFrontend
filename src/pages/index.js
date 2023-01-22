@@ -11,12 +11,6 @@ export default function Home() {
 
   return (
     <div className="flex justify-center">
-      <ConnectMetamask
-        activeAccount={activeAccount}
-        setActiveAccount={setActiveAccount}
-        setBalance={setBalance}
-        setChainId={setChainId}
-      />
       <ERC20Generator
         activeAccount={activeAccount}
         chainId={chainId}
@@ -25,6 +19,12 @@ export default function Home() {
         contractAddress={contractAddress}
         setTransactionHash={setTransactionHash}
         transactionHash={transactionHash}
+      />
+      <ConnectMetamask
+        activeAccount={activeAccount}
+        setActiveAccount={setActiveAccount}
+        setBalance={setBalance}
+        setChainId={setChainId}
       />
     </div>
   );
