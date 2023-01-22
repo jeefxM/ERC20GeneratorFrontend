@@ -64,7 +64,7 @@ function ConnectMetamask(props) {
   }, [props.activeAccount]);
 
   return (
-    <div className="absolute w-96 right-0 ml-auto pl-20 ">
+    <div className="absolute w-96 right-0 ml-auto pl-32">
       {!props.activeAccount && (
         <Button
           variant="contained"
