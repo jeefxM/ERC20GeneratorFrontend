@@ -13,8 +13,8 @@ function UserGuide() {
           Total supply field: Input the desiered total supply of the Token
         </li>
         <li>
-          After the deployment: open up the metamask extansion Metamask | Assets
-          | Import tokens | Insert address | Add custom token
+          After the deployment open up the metamask extansion and then:<br></br>{" "}
+          Metamask | Assets | Import tokens | Insert address | Add custom token
         </li>
       </ul>
     </div>
