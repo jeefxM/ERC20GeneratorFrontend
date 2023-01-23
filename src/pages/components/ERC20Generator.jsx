@@ -65,8 +65,8 @@ function ERC20Generator(props) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-auto px-20 my-40 h-auto py-16 bg-slate-200 gap-5 flex-wrap rounded-lg font-poppins max-md:px-2 max-sm:w-80 max-md:w-196 max-md:justify-start ">
-      <h1 className="text-3xl m max-md:text-xl font-semibold">
+    <div className="flex flex-col justify-center items-center w-auto px-20 my-32 h-auto py-16 bg-slate-200 gap-5 flex-wrap rounded-lg font-poppins max-md:px-2 max-sm:w-80 max-md:w-196 max-md:justify-start ">
+      <h1 className="text-3xl m max-md:text-xl text-semibold">
         ERC20 Token ERC20Generator by Jeefx
       </h1>
       <p className="max-md:text-xs">
