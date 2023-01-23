@@ -84,7 +84,8 @@ function ERC20Generator(props) {
       <Button
         variant="contained"
         onClick={createToken}
-        className="w-40 max-md:w-32 bg-gray-500"
+        className="w-40 max-md:w-32 "
+        style={{ backgroundColor: "#6B7280" }}
       >
         Submit
       </Button>
